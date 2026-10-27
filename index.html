@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Étudiant</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a1a2e;--bg2:#10253f;--card:#16304d;--line:#2a4566;--tx:#e8eef6;--mut:#8ea3bb;--acc:#e0583c;--teal:#4fd1b0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f6fa;--bg2:#e4ebf3;--card:#fff;--line:#c4d0de;--tx:#0a1a2e;--mut:#51667d;--acc:#c8432a;--teal:#0e8f74}}
+:root[data-theme="dark"]{--bg:#0a1a2e}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"IBM Plex Mono","Courier New",monospace;line-height:1.7}
+a{color:inherit;text-decoration:none}
+/* mini-grille compatible Bootstrap */
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.row{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
+.row>*{grid-column:span 12}
+@media(min-width:768px){.col-md-4{grid-column:span 4}.col-md-5{grid-column:span 5}.col-md-7{grid-column:span 7}.col-md-6{grid-column:span 6}}
+.navbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-top:.8rem;padding-bottom:.8rem;gap:.5rem}
+.navbar-nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin:0;padding:0;list-style:none;font-size:.9rem}
+.nav-link:hover{color:var(--acc)}
+.pill{border:1px solid var(--mut);border-radius:99px;padding:.15rem .8rem;font-size:.8rem;color:var(--mut)}
+.btn{display:inline-block;border:1px solid var(--mut);border-radius:99px;padding:.35rem 1.1rem;background:none;color:var(--tx);font:inherit;font-size:.85rem;cursor:pointer}
+.btn:hover,.btn.active{background:var(--acc);border-color:var(--acc);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;height:100%}
+.card-body{padding:1.1rem 1.2rem}
+.badge{display:inline-block;font-size:.72rem;padding:.05rem .55rem;border-radius:5px;background:var(--acc);color:#fff}
+.badge.t{background:transparent;border:1px solid var(--teal);color:var(--teal)}
+section{padding:5rem 0;border-top:1px solid var(--line)}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:3rem 0 2rem;border:0}
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:2rem 0;margin:3rem 0}
+h1{font-size:clamp(3rem,11vw,7.5rem);font-weight:500;margin:0;line-height:1}
+h2{font-size:1.6rem;font-weight:500;margin:0 0 2rem}
+h2::before{content:"/* ";color:var(--acc)}h2::after{content:" */";color:var(--acc)}
+.role{color:var(--acc);font-size:1.4rem}.yr{color:var(--teal)}
+.tag{color:var(--acc);font-size:.8rem}
+.mut{color:var(--mut)}.teal{color:var(--teal)}.acc{color:var(--acc)}
+.big{font-size:2rem;font-weight:500}
+.thumb{height:140px;display:grid;place-items:center;font-size:2.4rem;background:linear-gradient(135deg,var(--bg2),var(--card));border-bottom:1px solid var(--line);color:var(--teal)}
+.card h3{margin:.6rem 0 .3rem;font-size:1.05rem;font-weight:500}
+.card p{margin:0;font-size:.85rem;color:var(--mut)}
+.hide{display:none}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--mut);font-size:.8rem}
+.stats{display:flex;gap:2rem;flex-wrap:wrap}
+:root[data-theme="light"]{--bg:#f3f6fa;--bg2:#e4ebf3;--card:#fff;--line:#c4d0de;--tx:#0a1a2e;--mut:#51667d;--acc:#c8432a;--teal:#0e8f74}
+#grid .card{cursor:pointer;transition:transform .15s,border-color .15s}
+#grid .card:hover,#grid .card:focus-visible{transform:translateY(-3px);border-color:var(--acc);outline:0}
+.thumb svg{width:100%;height:100%}
+dialog{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:16px;padding:0;width:min(640px,92vw);max-height:88vh;overflow:auto;font-family:inherit}
+dialog::backdrop{background:rgba(5,12,22,.75)}
+.dlg-img{height:200px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,var(--bg2),var(--card))}
+.dlg-img svg{width:100%;height:100%}
+.dlg-b{padding:1.4rem 1.6rem}
+.dlg-b h3{font-size:1.4rem;font-weight:500;margin:.6rem 0}
+.dlg-b ul{padding-left:1.1rem;color:var(--mut);font-size:.9rem}
+.dlg-x{float:right;margin:.8rem}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basé à Rennes</span>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="#top">&lt;/&gt;</a></li>
+      <li><a class="nav-link" href="#apropos">À propos</a></li>
+      <li><a class="nav-link" href="#projets">Projets</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="top" class="container hero">
+  <div class="band">
+    <div class="row" style="align-items:end">
+      <div class="col-md-7"><h1>Portfolio</h1></div>
+      <div class="col-md-5"><div class="role">&gt; Étudiant·e</div><div class="yr">&gt; 2026</div></div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem">
+    <div><span class="mut">_Bonjour, je suis</span><div style="font-size:clamp(1.8rem,5vw,3rem)">Prénom Nom</div></div>
+    <a class="btn" href="#apropos">En savoir plus</a>
+  </div>
+</header>
+
+<section id="apropos">
+  <div class="container">
+    <h2>À propos</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card"><div class="card-body">
+          <span class="tag">_Ma_bio</span>
+          <p style="margin:.6rem 0;color:var(--tx)">&gt; Étudiant·e curieux·se, à la croisée de l’électronique, du code et des langues. J’aime comprendre comment les choses fonctionnent, du circuit imprimé à la syntaxe.</p>
+          <span class="tag">_Formation</span>
+          <p style="margin:.6rem 0;color:var(--tx)">&gt; Nom de ta formation — Ton établissement (2024 – 2027)</p>
+        </div></div>
+      </div>
+      <div class="col-md-5">
+        <div class="card"><div class="card-body">
+          <span class="tag">_Compétences</span>
+          <div class="stats" style="margin:.8rem 0">
+            <div><div class="big">3</div><span class="mut">domaines</span></div>
+            <div><div class="big">12+</div><span class="mut">projets</span></div>
+            <div><div class="big">4</div><span class="mut">langues</span></div>
+          </div>
+          <span class="badge t">Arduino</span> <span class="badge t">Python</span> <span class="badge t">HTML/CSS</span> <span class="badge t">Traduction</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="container">
+    <h2>Projets</h2>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem" id="filters">
+      <button class="btn active" data-f="all">Tous</button>
+      <button class="btn" data-f="electronique">Électronique</button>
+      <button class="btn" data-f="code">Code</button>
+      <button class="btn" data-f="linguistique">Linguistique</button>
+    </div>
+    <div class="row" id="grid">
+      <div class="col-md-4" data-c="electronique"><div class="card"><div class="thumb">⚡</div><div class="card-body"><span class="badge">Électronique</span><h3>Station météo Arduino</h3><p>Capteurs de température et d’humidité avec affichage LCD.</p></div></div></div>
+      <div class="col-md-4" data-c="electronique"><div class="card"><div class="thumb">◉</div><div class="card-body"><span class="badge">Électronique</span><h3>Amplificateur audio</h3><p>Conception et soudure d’un ampli classe AB sur PCB.</p></div></div></div>
+      <div class="col-md-4" data-c="code"><div class="card"><div class="thumb">&lt;/&gt;</div><div class="card-body"><span class="badge">Code</span><h3>Application de tâches</h3><p>Web app en JavaScript avec sauvegarde locale.</p></div></div></div>
+      <div class="col-md-4" data-c="code"><div class="card"><div class="thumb">{ }</div><div class="card-body"><span class="badge">Code</span><h3>Bot Discord en Python</h3><p>Commandes personnalisées et gestion de rappels.</p></div></div></div>
+      <div class="col-md-4" data-c="linguistique"><div class="card"><div class="thumb">Aa</div><div class="card-body"><span class="badge">Linguistique</span><h3>Analyse phonétique</h3><p>Comparaison des voyelles du français et de l’anglais.</p></div></div></div>
+      <div class="col-md-4" data-c="linguistique"><div class="card"><div class="thumb">文</div><div class="card-body"><span class="badge">Linguistique</span><h3>Glossaire bilingue</h3><p>Lexique technique anglais–français en électronique.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Dis…Bonjour</h2>
+    <p class="mut">Merci de votre visite. Parlons de votre projet !</p>
+    <p>&gt; <span class="acc">mail</span> : prenom.nom@mail.com</p>
+    <p>&gt; <span class="acc">web</span> : www.exemple.com</p>
+    <p>&gt; <span class="acc">tel</span> : 06 00 00 00 00</p>
+  </div>
+</section>
+
+<footer><div class="container">© 2026 Prénom Nom — Portfolio étudiant</div></footer>
+
+<dialog id="dlg"><button class="btn dlg-x" id="dx" type="button">✕ Fermer</button><div class="dlg-img" id="dimg"></div><div class="dlg-b"><span class="badge" id="dcat"></span><h3 id="dtit"></h3><p id="ddesc"></p><ul id="dli"></ul><div id="dtags"></div></div></dialog>
+
+<script>
+document.querySelectorAll('#filters .btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('#filters .btn').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var f=b.dataset.f;
+    document.querySelectorAll('#grid>div').forEach(function(c){
+      c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f);
+    });
+  });
+});
+var ART={
+electronique:'<svg viewBox="0 0 300 140" preserveAspectRatio="xMidYMid slice" fill="none" stroke-width="2"><g stroke="#4fd1b0"><path d="M0 30H90V60M0 70H70M0 110H110V90M300 40H210V60M300 100H230V80M300 20H180V10"/><rect x="110" y="50" width="100" height="50" rx="4" stroke="#e0583c"/><path d="M125 50V40M145 50V40M165 50V40M185 50V40M125 100V110M145 100V110M165 100V110M185 100V110"/></g><g fill="#4fd1b0"><circle cx="90" cy="60" r="4"/><circle cx="70" cy="70" r="4"/><circle cx="210" cy="60" r="4"/></g><text x="160" y="81" fill="#e0583c" stroke="none" font-size="12" text-anchor="middle" font-family="monospace">MCU</text></svg>',
+code:'<svg viewBox="0 0 300 140" preserveAspectRatio="xMidYMid slice" font-family="monospace" font-size="13"><text x="30" y="35" fill="#e0583c">function</text><text x="98" y="35" fill="#4fd1b0">hello</text><text x="140" y="35" fill="#8ea3bb">() {</text><text x="46" y="60" fill="#8ea3bb">return</text><text x="96" y="60" fill="#4fd1b0">"salut"</text><text x="30" y="85" fill="#8ea3bb">}</text><text x="30" y="115" fill="#e0583c">&lt;/&gt;</text><rect x="60" y="104" width="8" height="14" fill="#4fd1b0"/></svg>',
+linguistique:'<svg viewBox="0 0 300 140" preserveAspectRatio="xMidYMid slice" font-family="monospace"><rect x="40" y="25" width="110" height="55" rx="12" fill="none" stroke="#4fd1b0" stroke-width="2"/><text x="95" y="62" fill="#4fd1b0" font-size="28" text-anchor="middle">Aa</text><rect x="150" y="60" width="110" height="55" rx="12" fill="none" stroke="#e0583c" stroke-width="2"/><text x="205" y="98" fill="#e0583c" font-size="28" text-anchor="middle">/æ/</text></svg>'};
+var CAT={electronique:'Électronique',code:'Code',linguistique:'Linguistique'};
+var DET=[
+{t:'Station météo Arduino',d:'Une station qui mesure la température et l’humidité et les affiche en temps réel sur un écran LCD.',l:['Durée : 3 semaines','Rôle : conception, câblage, programmation','Résultat : écart de 0,5 °C avec une station de référence'],g:['Arduino Uno','DHT22','LCD I2C','C++']},
+{t:'Amplificateur audio',d:'Conception d’un amplificateur de classe AB, du schéma au circuit imprimé soudé à la main.',l:['Durée : 6 semaines','Rôle : simulation, routage PCB, soudure','Résultat : 10 W sur 8 Ω, distorsion inférieure à 1 %'],g:['KiCad','LTspice','Soudure','Mesures']},
+{t:'Application de tâches',d:'Une application web pour organiser ses tâches, avec filtres et sauvegarde dans le navigateur.',l:['Durée : 2 semaines','Rôle : design et développement','Résultat : interface responsive, utilisable au clavier'],g:['HTML','CSS','JavaScript','Git']},
+{t:'Bot Discord en Python',d:'Un bot de serveur avec commandes personnalisées et système de rappels programmés.',l:['Durée : 3 semaines','Rôle : développement et déploiement','Résultat : utilisé par un serveur de 80 membres'],g:['Python','discord.py','SQLite']},
+{t:'Analyse phonétique',d:'Étude comparée des voyelles du français et de l’anglais à partir d’enregistrements de locuteurs.',l:['Durée : 1 semestre','Rôle : collecte, transcription, analyse','Résultat : mémoire de 15 pages'],g:['Praat','API','Statistiques']},
+{t:'Glossaire bilingue',d:'Un lexique technique anglais–français des termes d’électronique, avec définitions et exemples.',l:['Durée : 4 semaines','Rôle : recherche terminologique, traduction','Résultat : 250 entrées validées'],g:['Terminologie','Traduction','Tableur']}];
+var dlg=document.getElementById('dlg');
+document.querySelectorAll('#grid>div').forEach(function(c,i){
+  var k=c.dataset.c,card=c.firstElementChild;
+  c.querySelector('.thumb').innerHTML=ART[k];
+  card.tabIndex=0;card.setAttribute('role','button');
+  function open(){var p=DET[i];
+    document.getElementById('dimg').innerHTML=ART[k];
+    document.getElementById('dcat').textContent=CAT[k];
+    document.getElementById('dtit').textContent=p.t;
+    document.getElementById('ddesc').textContent=p.d;
+    document.getElementById('dli').innerHTML=p.l.map(function(x){return '<li>'+x+'</li>'}).join('');
+    document.getElementById('dtags').innerHTML=p.g.map(function(x){return '<span class="badge t">'+x+'</span> '}).join('');
+    dlg.showModal();}
+  card.addEventListener('click',open);
+  card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+});
+document.getElementById('dx').addEventListener('click',function(){dlg.close()});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+var root=document.documentElement;
+document.getElementById('theme').addEventListener('click',function(){
+  var t=root.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+  root.dataset.theme=t==='dark'?'light':'dark';
+});
+</script>
+</body>
+</html>
