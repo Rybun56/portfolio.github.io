@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Rose Bernard</title>
+<meta name="description" content="Portfolio de candidature de Rose Bernard pour les écoles d’ingénieurs : électronique, cybersécurité et linguistique de l’Asie de l’Est.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link active" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<header id="top" class="container hero hero2">
+  <div class="hero-grid">
+    <div>
+      <h1 class="hi"><span class="acc">Rose Bernard</span></h1>
+      <div class="role">&gt; Portfolio de candidature</div>
+      <div class="yr" style="margin-bottom:1rem">&gt; Écoles d’ingénieurs · 2026</div>
+      <p class="mut" style="max-width:520px;margin:0 0 1.8rem">Bonjour, je m’appelle Rose. Ce portfolio présente mes projets, mes compétences et mon parcours (licence LLCER chinois, BTS CIEL option ER) en électronique, cybersécurité et linguistique de l’Asie de l’Est, à l’appui de ma candidature en école d’ingénieur.</p>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+        <a class="btn btn-primary" href="#contact">Me contacter</a>
+        <a class="btn" href="projets.html">Voir mes projets</a>
+      </div>
+      <div class="soc"><a href="https://www.linkedin.com/in/rose-bernard-a14404447" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div>
+    </div>
+    <div class="ph"><div class="art"><svg viewBox="0 0 300 300" fill="none" stroke-width="3" aria-hidden="true"><g class="s1"><path d="M0 70H80V120M0 150H60M0 230H90V190M300 80H220V120M300 160H240M300 240H210V200M150 0V60M110 0V40M190 0V40M150 300V240M110 300V260M190 300V260"/></g><rect class="s2" x="80" y="100" width="140" height="100" rx="8"/><g class="f1"><circle cx="80" cy="120" r="5"/><circle cx="220" cy="120" r="5"/><circle cx="90" cy="190" r="5"/><circle cx="210" cy="200" r="5"/></g><path class="s1" d="M150 120l-26 9v16c0 15 11 25 26 31 15-6 26-16 26-31v-16z"/><path class="s1" d="M139 147l8 8 15-16"/><text class="t1" x="100" y="85" font-size="22" font-family="monospace">&lt;/&gt;</text><text class="t2" x="122" y="262" font-size="26">文</text></svg></div></div>
+  </div>
+</header>
+<div class="banner"><img src="banniere.jpg" alt="Illustration : cybersécurité et culture chinoise (中国文化圈)" loading="lazy"></div>
+
+<section id="apropos">
+  <div class="container">
+    <h2>À propos</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card"><div class="card-body">
+          <span class="tag">_Ma_bio</span>
+          <p style="margin:.6rem 0;color:var(--tx)">&gt; Curieuse, à la croisée de l’électronique, du code et des langues. J’aime comprendre comment les choses fonctionnent, du circuit imprimé aux particularités syntaxiques. Je parle chinois (niveau B2–C1) et japonais (niveau B1).</p>
+          <span class="tag">_Formation</span>
+          <p style="margin:.6rem 0;color:var(--tx)">&gt; Licence LLCER chinois — Université Rennes 2, pour conclure 10 ans d’apprentissage du chinois<br>&gt; BTS CIEL option ER — Lycée Jeanne d’Arc, Vitré (35)</p>
+        </div></div>
+      </div>
+      <div class="col-md-5" id="competences">
+        <div class="card"><div class="card-body">
+          <span class="tag">_Compétences</span>
+          <span class="badge t">Électronique</span> <span class="badge t">Cybersécurité</span> <span class="badge t">Linguistique</span> <span class="badge t">Chinois B2–C1</span> <span class="badge t">Japonais B1</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apercu">
+  <div class="container">
+    <h2>Projets</h2>
+    <div class="row" id="grid">
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-casque.html"><div class="card"><div class="thumb" style="display:flex"><img src="casque-marshall.jpg" alt="Remplacement de la batterie d’un casque Marshall Major IV" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Remplacement de la batterie d’un casque Marshall Major IV</h3><p>Remplacement de la batterie d’un casque audio Marshall Major IV.</p></div></div></a></div>
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-four.html"><div class="card"><div class="thumb" style="display:flex"><img src="four.jpg" alt="Installation d’un four" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Installation d’un four</h3><p>Trouver la prise de terre.</p></div></div></a></div>
+      <div class="col-md-4" data-c="cyber"><a class="card-link" href="projet-faille.html"><div class="card"><div class="thumb" style="display:flex"><img src="controle-acces.jpg" alt="Faille du bâtiment" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Sécurité matérielle</span><h3>Faille du bâtiment</h3><p>Dans le cadre de ma recherche de stage en électronique et cybersécurité : comment se retrouver face à la porte d’un recruteur grâce à une faille du bâtiment, et comment la corriger.</p></div></div></a></div>
+      <div class="col-md-4" data-c="code cyber linguistique"><a class="card-link" href="projet-veille.html"><div class="card"><div class="thumb" style="display:flex"><img src="globalmilitary.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"><img src="drapeaux-asie.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Code · Linguistique</span><h3>Création d’un outil de veille informationnelle basée sur des données open source</h3><p>Application au domaine militaire chinois.</p></div></div></a></div>
+    </div>
+    <p style="margin-top:2rem"><a class="btn" href="projets.html">Voir tous les projets →</a></p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Dis…Bonjour</h2>
+    <p class="mut">Merci de votre visite. Échangeons sur LinkedIn !</p>
+    <p>&gt; <span class="acc">linkedin</span> : <a href="https://www.linkedin.com/in/rose-bernard-a14404447" target="_blank" rel="noopener" style="text-decoration:underline">Rose Bernard</a></p>
+  </div>
+</section>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Remplacement de la batterie d’un casque Marshall Major IV – Rose Bernard</title>
+<meta name="description" content="Remplacement de la batterie d’un casque audio Marshall Major IV.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem;max-width:860px">
+  <div class="crumb"><a class="acc" href="projets.html">← Tous les projets</a></div>
+  <span class="badge">Électronique</span>
+  <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);margin:.8rem 0">Remplacement de la batterie d’un casque Marshall Major IV</h1>
+  <div class="pcover"><img src="casque-marshall.jpg" alt="Remplacement de la batterie d’un casque Marshall Major IV" loading="lazy"></div>
+  <p>Remplacement de la batterie d’un casque audio Marshall Major IV.</p>
+  <p class="mut"><em>Détails à venir (étapes, outils, résultat)</em></p>
+  <img class="inl" src="atelier-casque.jpg" alt="Remplacement de la batterie d’un casque Marshall Major IV" loading="lazy">
+  <div><span class="badge t">Remplacement de batterie</span> <span class="badge t">Réparation</span> <span class="badge t">Électronique audio</span></div>
+  <p class="mut" style="font-size:.8rem"></p>
+  <div class="pnav"><a class="btn" href="projet-veille.html">← Projet précédent</a><a class="btn" href="projet-four.html">Projet suivant →</a></div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faille du bâtiment – Rose Bernard</title>
+<meta name="description" content="Projet réalisé dans le cadre de ma recherche de stage dans le milieu de l’électronique et de la cybersécurité : comment se retrouver face à la porte d’un recruteur d’une entreprise de sécurité informatique grâce à une faille du bâtiment, et comment résoudre cette faille.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem;max-width:860px">
+  <div class="crumb"><a class="acc" href="projets.html">← Tous les projets</a></div>
+  <span class="badge">Cybersécurité · Sécurité matérielle</span>
+  <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);margin:.8rem 0">Faille du bâtiment</h1>
+  <div class="pcover"><img src="controle-acces.jpg" alt="Faille du bâtiment" loading="lazy"></div>
+  <p>Projet réalisé dans le cadre de ma recherche de stage dans le milieu de l’électronique et de la cybersécurité : comment se retrouver face à la porte d’un recruteur d’une entreprise de sécurité informatique grâce à une faille du bâtiment, et comment résoudre cette faille.</p>
+  <p class="mut"><em>Détails à venir (étapes, outils, résultat)</em></p>
+  
+  <div><span class="badge t">Sécurité physique</span> <span class="badge t">Contrôle d’accès</span> <span class="badge t">Remédiation</span></div>
+  <p class="mut" style="font-size:.8rem"></p>
+  <div class="pnav"><a class="btn" href="projet-four.html">← Projet précédent</a><a class="btn" href="projet-veille.html">Projet suivant →</a></div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Installation d’un four – Rose Bernard</title>
+<meta name="description" content="Installation d’un four : identifier chaque câble de l’installation avant de finir le branchement.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem;max-width:860px">
+  <div class="crumb"><a class="acc" href="projets.html">← Tous les projets</a></div>
+  <span class="badge">Électronique</span>
+  <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);margin:.8rem 0">Installation d’un four</h1>
+  <div class="pcover"><img src="four.jpg" alt="Installation d’un four" loading="lazy"></div>
+  <p>Installation d’un four : identifier chaque câble de l’installation avant de finir le branchement.</p>
+  <ul class="steps"><li>Étape 1 — Couper l’électricité dans la cuisine.</li><li>Étape 2 — Chercher le fil de terre : une borne du multimètre sur l’évacuation (objet métallique relié à la terre), l’autre sur le fil testé, pour mesurer la résistance (contact = terre).</li><li>Étape 3 — Chercher le neutre : multimètre branché sur la terre et l’autre borne sur un des fils restants à identifier (si tension mesurée = phase).</li><li>Étape 4 — Une fois chaque câble identifié, finir le branchement puis rallumer le courant.</li></ul>
+  
+  <div><span class="badge t">Installation électrique</span> <span class="badge t">Multimètre</span> <span class="badge t">Prise de terre</span> <span class="badge t">Sécurité</span></div>
+  <p class="mut" style="font-size:.8rem"></p>
+  <div class="pnav"><a class="btn" href="projet-casque.html">← Projet précédent</a><a class="btn" href="projet-faille.html">Projet suivant →</a></div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projets – Rose Bernard</title>
+<meta name="description" content="Portfolio de candidature de Rose Bernard pour les écoles d’ingénieurs : électronique, cybersécurité et linguistique de l’Asie de l’Est.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem">
+    <h2>Projets</h2>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem" id="filters">
+      <button class="btn active" data-f="all">Tous</button>
+      <button class="btn" data-f="electronique">Électronique</button>
+      <button class="btn" data-f="cyber">Cybersécurité</button>
+      <button class="btn" data-f="code">Code</button>
+      <button class="btn" data-f="linguistique">Linguistique</button>
+    </div>
+    <div class="row" id="grid">
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-casque.html"><div class="card"><div class="thumb" style="display:flex"><img src="casque-marshall.jpg" alt="Remplacement de la batterie d’un casque Marshall Major IV" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Remplacement de la batterie d’un casque Marshall Major IV</h3><p>Remplacement de la batterie d’un casque audio Marshall Major IV.</p></div></div></a></div>
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-four.html"><div class="card"><div class="thumb" style="display:flex"><img src="four.jpg" alt="Installation d’un four" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Installation d’un four</h3><p>Trouver la prise de terre.</p></div></div></a></div>
+      <div class="col-md-4" data-c="cyber"><a class="card-link" href="projet-faille.html"><div class="card"><div class="thumb" style="display:flex"><img src="controle-acces.jpg" alt="Faille du bâtiment" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Sécurité matérielle</span><h3>Faille du bâtiment</h3><p>Dans le cadre de ma recherche de stage en électronique et cybersécurité : comment se retrouver face à la porte d’un recruteur grâce à une faille du bâtiment, et comment la corriger.</p></div></div></a></div>
+      <div class="col-md-4" data-c="code cyber linguistique"><a class="card-link" href="projet-veille.html"><div class="card"><div class="thumb" style="display:flex"><img src="globalmilitary.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"><img src="drapeaux-asie.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Code · Linguistique</span><h3>Création d’un outil de veille informationnelle basée sur des données open source</h3><p>Application au domaine militaire chinois.</p></div></div></a></div>
+    </div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Création d’un outil de veille informationnelle basée sur des données open source – Rose Bernard</title>
+<meta name="description" content="Création d’un outil de veille informationnelle basée sur des données open source, appliqué au domaine militaire chinois.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem;max-width:860px">
+  <div class="crumb"><a class="acc" href="projets.html">← Tous les projets</a></div>
+  <span class="badge">Cybersécurité · Code · Linguistique</span>
+  <h1 style="font-size:clamp(1.8rem,5vw,2.8rem);margin:.8rem 0">Création d’un outil de veille informationnelle basée sur des données open source</h1>
+  <div class="pcover"><img src="globalmilitary.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"><img src="drapeaux-asie.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"></div>
+  <p>Création d’un outil de veille informationnelle basée sur des données open source, appliqué au domaine militaire chinois.</p>
+  <p class="mut"><em>Détails à venir (étapes, outils, résultat)</em></p>
+  
+  <div><span class="badge t">CTI</span> <span class="badge t">Open source</span> <span class="badge t">Base de données</span> <span class="badge t">Chinois</span></div>
+  <p class="mut" style="font-size:.8rem">Source : globalmilitary.net.</p>
+  <div class="pnav"><a class="btn" href="projet-faille.html">← Projet précédent</a><a class="btn" href="projet-casque.html">Projet suivant →</a></div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+(function(){
+var root=document.documentElement;
+try{var sv=localStorage.getItem('theme');if(sv)root.dataset.theme=sv;}catch(e){}
+var tb=document.getElementById('theme');
+if(tb)tb.addEventListener('click',function(){
+  var t=root.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+  t=t==='dark'?'light':'dark';root.dataset.theme=t;
+  try{localStorage.setItem('theme',t)}catch(e){}
+});
+var fl=document.querySelectorAll('#filters .btn');
+fl.forEach(function(b){b.addEventListener('click',function(){
+  fl.forEach(function(x){x.classList.remove('active')});b.classList.add('active');
+  var f=b.dataset.f;
+  document.querySelectorAll('#grid>div').forEach(function(c){
+    c.classList.toggle('hide',f!=='all'&&c.dataset.c.split(' ').indexOf(f)<0);
+  });
+});});
+})();
+
+:root{--bg:#070a1c;--bg2:#0d1230;--card:#131a3a;--line:#2b3166;--tx:#eaf0ff;--mut:#9aa6d4;--acc:#e02bb8;--teal:#2fd8ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5ff;--bg2:#e9e7fa;--card:#fff;--line:#d3d0ee;--tx:#12143a;--mut:#5a5f8e;--acc:#b8168f;--teal:#0a86ab}}
+:root[data-theme="dark"]{--bg:#070a1c}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"IBM Plex Mono","Courier New",monospace;line-height:1.7}
+a{color:inherit;text-decoration:none}
+/* mini-grille compatible Bootstrap */
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.row{display:grid;grid-template-columns:repeat(12,1fr);gap:1.25rem}
+.row>*{grid-column:span 12}
+@media(min-width:768px){.col-md-4{grid-column:span 4}.col-md-5{grid-column:span 5}.col-md-7{grid-column:span 7}.col-md-6{grid-column:span 6}}
+.navbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding-top:.8rem;padding-bottom:.8rem;gap:.5rem}
+.navbar-nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin:0;padding:0;list-style:none;font-size:.9rem}
+.nav-link:hover{color:var(--acc)}
+.pill{border:1px solid var(--mut);border-radius:99px;padding:.15rem .8rem;font-size:.8rem;color:var(--mut)}
+.btn{display:inline-block;border:1px solid var(--mut);border-radius:99px;padding:.35rem 1.1rem;background:none;color:var(--tx);font:inherit;font-size:.85rem;cursor:pointer}
+.btn:hover,.btn.active{background:var(--acc);border-color:var(--acc);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;height:100%}
+.card-body{padding:1.1rem 1.2rem}
+.badge{display:inline-block;font-size:.72rem;padding:.05rem .55rem;border-radius:5px;background:var(--acc);color:#fff}
+.badge.t{background:transparent;border:1px solid var(--teal);color:var(--teal)}
+section{padding:5rem 0;border-top:1px solid var(--line)}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:3rem 0 2rem;border:0}
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:2rem 0;margin:3rem 0}
+h1{font-size:clamp(3rem,11vw,7.5rem);font-weight:500;margin:0;line-height:1}
+h2{font-size:1.6rem;font-weight:500;margin:0 0 2rem}
+h2::before{content:"/* ";color:var(--acc)}h2::after{content:" */";color:var(--acc)}
+.role{color:var(--acc);font-size:1.4rem}.yr{color:var(--teal)}
+.tag{color:var(--acc);font-size:.8rem}
+.mut{color:var(--mut)}.teal{color:var(--teal)}.acc{color:var(--acc)}
+.big{font-size:2rem;font-weight:500}
+.thumb{height:140px;display:grid;place-items:center;font-size:2.4rem;background:linear-gradient(135deg,var(--bg2),var(--card));border-bottom:1px solid var(--line);color:var(--teal)}
+.card h3{margin:.6rem 0 .3rem;font-size:1.05rem;font-weight:500}
+.card p{margin:0;font-size:.85rem;color:var(--mut)}
+.hide{display:none}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--mut);font-size:.8rem}
+.stats{display:flex;gap:2rem;flex-wrap:wrap}
+:root[data-theme="light"]{--bg:#f6f5ff;--bg2:#e9e7fa;--card:#fff;--line:#d3d0ee;--tx:#12143a;--mut:#5a5f8e;--acc:#b8168f;--teal:#0a86ab}
+#grid .card{cursor:pointer;transition:transform .15s,border-color .15s}
+#grid .card:hover,#grid .card:focus-visible{transform:translateY(-3px);border-color:var(--acc);outline:0}
+.thumb svg{width:100%;height:100%}
+dialog{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:16px;padding:0;width:min(640px,92vw);max-height:88vh;overflow:auto;font-family:inherit}
+dialog::backdrop{background:rgba(5,12,22,.75)}
+.dlg-img{height:200px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,var(--bg2),var(--card))}
+.dlg-img svg{width:100%;height:100%}
+.dlg-b{padding:1.4rem 1.6rem}
+.dlg-b h3{font-size:1.4rem;font-weight:500;margin:.6rem 0}
+.dlg-b ul{padding-left:1.1rem;color:var(--mut);font-size:.9rem}
+.dlg-x{float:right;margin:.8rem}
+#dinl img{display:block;width:100%;max-height:420px;object-fit:cover;object-position:center 35%;border-radius:10px;border:1px solid var(--line);margin:1rem 0}
+.thumb img,.dlg-img img{flex:1;min-width:0;height:100%;object-fit:cover;object-position:top}
+
+.nav-link.active{color:var(--acc)}
+.card-link{display:block;height:100%}
+.crumb{font-size:.85rem;margin-bottom:1.5rem}
+.pcover{display:flex;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:1.5rem 0;max-height:420px}
+.pcover img{flex:1;min-width:0;width:100%;object-fit:cover;object-position:top}
+.steps{list-style:none;padding:0;margin:1.5rem 0}
+.steps li{border-left:2px solid var(--acc);padding:.2rem 0 .2rem 1rem;margin:.9rem 0}
+img.inl{display:block;width:100%;max-height:460px;object-fit:cover;object-position:center 35%;border-radius:12px;border:1px solid var(--line);margin:1.5rem 0}
+.pnav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+
+.hero2{background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:28px 28px}
+.hero2 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center;flex:1}
+.hi{font-size:clamp(2.2rem,6.5vw,4.6rem);line-height:1.1;margin:.4rem 0 1rem}
+.hero2 .role{font-size:clamp(1rem,2.4vw,1.35rem)}
+.ph{filter:drop-shadow(0 12px 32px rgba(224,43,184,.35))}
+.ph img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:center;clip-path:polygon(18% 3%,88% 20%,100% 62%,68% 98%,7% 82%,0 33%)}
+.btn-primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn-primary:hover{filter:brightness(1.1)}
+.soc{display:flex;gap:.8rem;margin-top:2.2rem}
+.soc a{display:grid;place-items:center;width:2.4rem;height:2.4rem;border:1px solid var(--mut);border-radius:50%;font-size:.9rem;font-weight:600}
+.soc a:hover{border-color:var(--acc);color:var(--acc)}
+@media(max-width:767px){.hero2 .hero-grid{grid-template-columns:1fr}.ph{order:-1;max-width:300px;margin:0 auto}}
+
+.ph .art{aspect-ratio:1;display:grid;place-items:center;background:linear-gradient(135deg,var(--bg2),var(--card));clip-path:polygon(18% 3%,88% 20%,100% 62%,68% 98%,7% 82%,0 33%)}
+.ph .art svg{width:100%;height:100%}
+.ph .s1{stroke:var(--teal)}.ph .s2{stroke:var(--acc)}.ph .f1 circle{fill:var(--teal)}.ph .t1{fill:var(--acc)}.ph .t2{fill:var(--teal)}
+
+.ph{max-width:440px;margin-left:auto;filter:drop-shadow(0 0 28px rgba(47,216,255,.3))}
+.ph .art{clip-path:none;border-radius:50%;overflow:hidden;border:2px solid var(--teal)}
+.banner{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.banner img{display:block;width:100%;max-height:280px;object-fit:cover}
+@media(max-width:767px){.ph{margin:0 auto}}
+
+.hero2{background-image:radial-gradient(circle at 88% 15%,rgba(224,43,184,.2),transparent 45%),radial-gradient(circle at 8% 92%,rgba(47,216,255,.15),transparent 45%),radial-gradient(var(--line) 1px,transparent 1px);background-size:auto,auto,28px 28px}
+.thumb{height:190px;background:var(--bg2)}
+.thumb img{object-fit:contain;object-position:center;background:var(--bg2)}
+.pcover{display:grid;gap:1.2rem;border:0;border-radius:0;overflow:visible;max-height:none;background:none}
+.pcover img{display:block;flex:none;width:auto;height:auto;max-width:100%;max-height:520px;margin:0 auto;object-fit:contain;border:1px solid var(--line);border-radius:12px}
+img.inl{width:auto;max-width:100%;height:auto;max-height:560px;margin:1.5rem auto;object-fit:contain}
+.banner img{height:auto;max-height:340px}
