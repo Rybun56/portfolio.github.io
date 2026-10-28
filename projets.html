@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projets – Rose Bernard</title>
+<meta name="description" content="Portfolio de candidature de Rose Bernard pour les écoles d’ingénieurs : électronique, cybersécurité et linguistique de l’Asie de l’Est.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <span class="pill">⌕ Basée à Rennes et à Brest</span>
+    <ul class="navbar-nav"><li><a class="nav-link" href="index.html">&lt;/&gt; Accueil</a></li><li><a class="nav-link" href="index.html#apropos">À propos</a></li><li><a class="nav-link" href="index.html#competences">Compétences</a></li><li><a class="nav-link active" href="projets.html">Projets</a></li><li><a class="nav-link" href="index.html#contact">Contact</a></li>
+      <li><button class="btn" id="theme" type="button" aria-label="Changer de thème">◐</button></li>
+    </ul>
+  </div>
+</nav>
+<main class="container" style="padding:3rem 1.25rem 4rem">
+    <h2>Projets</h2>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem" id="filters">
+      <button class="btn active" data-f="all">Tous</button>
+      <button class="btn" data-f="electronique">Électronique</button>
+      <button class="btn" data-f="cyber">Cybersécurité</button>
+      <button class="btn" data-f="code">Code</button>
+      <button class="btn" data-f="linguistique">Linguistique</button>
+    </div>
+    <div class="row" id="grid">
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-casque.html"><div class="card"><div class="thumb" style="display:flex"><img src="casque-marshall.jpg" alt="Remplacement de la batterie d’un casque Marshall Major IV" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Remplacement de la batterie d’un casque Marshall Major IV</h3><p>Remplacement de la batterie d’un casque audio Marshall Major IV.</p></div></div></a></div>
+      <div class="col-md-4" data-c="electronique"><a class="card-link" href="projet-four.html"><div class="card"><div class="thumb" style="display:flex"><img src="four.jpg" alt="Installation d’un four" loading="lazy"></div><div class="card-body"><span class="badge">Électronique</span><h3>Installation d’un four</h3><p>Trouver la prise de terre.</p></div></div></a></div>
+      <div class="col-md-4" data-c="cyber"><a class="card-link" href="projet-faille.html"><div class="card"><div class="thumb" style="display:flex"><img src="controle-acces.jpg" alt="Faille du bâtiment" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Sécurité matérielle</span><h3>Faille du bâtiment</h3><p>Dans le cadre de ma recherche de stage en électronique et cybersécurité : comment se retrouver face à la porte d’un recruteur grâce à une faille du bâtiment, et comment la corriger.</p></div></div></a></div>
+      <div class="col-md-4" data-c="code cyber linguistique"><a class="card-link" href="projet-veille.html"><div class="card"><div class="thumb" style="display:flex"><img src="globalmilitary.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"><img src="drapeaux-asie.jpg" alt="Création d’un outil de veille informationnelle basée sur des données open source" loading="lazy"></div><div class="card-body"><span class="badge">Cybersécurité · Code · Linguistique</span><h3>Création d’un outil de veille informationnelle basée sur des données open source</h3><p>Application au domaine militaire chinois.</p></div></div></a></div>
+    </div>
+</main>
+<footer><div class="container">© 2026 Rose Bernard — Portfolio</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
